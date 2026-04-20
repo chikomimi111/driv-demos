@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emanuel Gigolo Entertainment AS - Eksklusiv Striptease & Underholdning</title>
-    <meta name="description" content="Emanuel Gigolo Entertainment AS tilbyr profesjonell striptease og underholdning for alle anledninger. Kontakt oss for et uforglemmelig show.">
+    <title>Emanuel Gigolo Entertainment AS | Profesjonell Striptease Underholdning</title>
+    <meta name="description" content="Emanuel Gigolo Entertainment AS - Premium striptease underholdning for alle anledninger. Profesjonelle artister for utdrikkingslag, fester og events.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -13,8 +13,8 @@
                     colors: {
                         gold: '#D4AF37',
                         'gold-dark': '#B8960C',
-                        'dark': '#0A0A0A',
-                        'darker': '#050505',
+                        noir: '#0A0A0A',
+                        'noir-light': '#1A1A1A',
                     }
                 }
             }
@@ -22,7 +22,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -31,10 +31,10 @@
             font-family: 'Playfair Display', serif;
         }
         .gradient-gold {
-            background: linear-gradient(135deg, #D4AF37 0%, #F5E7A3 50%, #D4AF37 100%);
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E4A6 50%, #D4AF37 100%);
         }
         .text-gradient {
-            background: linear-gradient(135deg, #D4AF37 0%, #F5E7A3 50%, #D4AF37 100%);
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E4A6 50%, #D4AF37 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -43,7 +43,7 @@
             box-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
         }
         .card-hover {
-            transition: all 0.4s ease;
+            transition: all 0.3s ease;
         }
         .card-hover:hover {
             transform: translateY(-10px);
@@ -51,144 +51,133 @@
         }
     </style>
 </head>
-<body class="bg-darker text-white">
+<body class="bg-noir text-white">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-darker/90 backdrop-blur-md border-b border-gold/20">
+    <nav class="fixed w-full z-50 bg-noir/90 backdrop-blur-md border-b border-gold/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full gradient-gold flex items-center justify-center">
-                        <span class="text-dark font-bold text-xl">E</span>
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 gradient-gold rounded-full flex items-center justify-center">
+                        <span class="text-noir font-bold text-xl">E</span>
                     </div>
-                    <span class="font-display text-xl font-semibold text-gradient">Emanuel Gigolo</span>
+                    <span class="font-display text-xl font-bold text-gradient">Emanuel Gigolo</span>
                 </div>
-                <div class="hidden md:flex items-center gap-8">
+                <div class="hidden md:flex items-center space-x-8">
                     <a href="#tjenester" class="text-gray-300 hover:text-gold transition-colors">Tjenester</a>
                     <a href="#om-oss" class="text-gray-300 hover:text-gold transition-colors">Om Oss</a>
                     <a href="#galleri" class="text-gray-300 hover:text-gold transition-colors">Galleri</a>
-                    <a href="#kontakt" class="px-6 py-2 gradient-gold text-dark font-semibold rounded-full hover:opacity-90 transition-opacity">
-                        Kontakt Oss
-                    </a>
+                    <a href="#kontakt" class="gradient-gold text-noir px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-opacity">Bestill Nå</a>
                 </div>
                 <button class="md:hidden text-gold" id="menu-btn">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-dark border-t border-gold/20" id="mobile-menu">
-            <div class="px-4 py-4 space-y-3">
-                <a href="#tjenester" class="block py-2 text-gray-300 hover:text-gold">Tjenester</a>
-                <a href="#om-oss" class="block py-2 text-gray-300 hover:text-gold">Om Oss</a>
-                <a href="#galleri" class="block py-2 text-gray-300 hover:text-gold">Galleri</a>
-                <a href="#kontakt" class="block py-2 text-gold font-semibold">Kontakt Oss</a>
+        <div class="hidden md:hidden bg-noir-light border-t border-gold/20" id="mobile-menu">
+            <div class="px-4 py-4 space-y-4">
+                <a href="#tjenester" class="block text-gray-300 hover:text-gold transition-colors">Tjenester</a>
+                <a href="#om-oss" class="block text-gray-300 hover:text-gold transition-colors">Om Oss</a>
+                <a href="#galleri" class="block text-gray-300 hover:text-gold transition-colors">Galleri</a>
+                <a href="#kontakt" class="block gradient-gold text-noir px-6 py-2 rounded-full font-semibold text-center">Bestill Nå</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-        <div class="absolute inset-0 bg-gradient-to-br from-dark via-darker to-dark"></div>
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gold/5 rounded-full blur-3xl"></div>
-        
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-noir via-noir-light to-noir"></div>
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-gold/30 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-gold/20 rounded-full filter blur-3xl"></div>
+        </div>
         <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
             <p class="text-gold uppercase tracking-[0.3em] text-sm mb-6 font-medium">Premium Underholdning</p>
-            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
                 <span class="text-white">Emanuel Gigolo</span><br>
                 <span class="text-gradient">Entertainment</span>
             </h1>
             <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-                Eksklusiv striptease og underholdning for private fester, utdrikningslag og eksklusive arrangementer. 
-                Vi skaper uforglemmelige øyeblikk.
+                Norges fremste leverandør av eksklusiv striptease underholdning. Vi skaper uforglemmelige øyeblikk for din spesielle anledning.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#kontakt" class="px-10 py-4 gradient-gold text-dark font-semibold rounded-full hover:opacity-90 transition-all glow">
+                <a href="#kontakt" class="gradient-gold text-noir px-10 py-4 rounded-full font-semibold text-lg hover:opacity-90 transition-all glow">
                     Book Underholdning
                 </a>
-                <a href="#tjenester" class="px-10 py-4 border-2 border-gold text-gold rounded-full hover:bg-gold hover:text-dark transition-all font-semibold">
-                    Se Våre Tjenester
+                <a href="#tjenester" class="border-2 border-gold text-gold px-10 py-4 rounded-full font-semibold text-lg hover:bg-gold hover:text-noir transition-all">
+                    Se Tjenester
                 </a>
             </div>
         </div>
-
-        <!-- Scroll Indicator -->
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="tjenester" class="py-24 bg-dark">
+    <section id="tjenester" class="py-24 bg-noir-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <p class="text-gold uppercase tracking-widest text-sm mb-4">Hva Vi Tilbyr</p>
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Våre Tjenester</h2>
-                <div class="w-24 h-1 gradient-gold mx-auto rounded-full"></div>
+                <p class="text-gold uppercase tracking-widest text-sm mb-4">Våre Tjenester</p>
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Skreddersydd Underholdning</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Vi tilbyr profesjonell underholdning tilpasset enhver anledning, fra intime fester til store events.</p>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Service Card 1 -->
-                <div class="card-hover bg-darker border border-gold/20 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"/>
+                <div class="bg-noir p-8 rounded-2xl border border-gold/20 card-hover">
+                    <div class="w-16 h-16 gradient-gold rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-noir" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
                         </svg>
                     </div>
-                    <h3 class="font-display text-2xl font-semibold text-white mb-4">Utdrikningslag</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        Gjør utdrikningslaget til en uforglemmelig opplevelse med våre profesjonelle artister. 
-                        Skreddersydde show for brud eller brudgom.
-                    </p>
+                    <h3 class="font-display text-2xl font-bold text-white mb-4">Utdrikkingslag</h3>
+                    <p class="text-gray-400 mb-6">Gjør utdrikkingslaget til en uforglemmelig opplevelse med våre profesjonelle artister.</p>
+                    <p class="text-gold font-semibold">Fra 3 500 kr</p>
                 </div>
-
                 <!-- Service Card 2 -->
-                <div class="card-hover bg-darker border border-gold/20 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                <div class="bg-noir p-8 rounded-2xl border border-gold/20 card-hover">
+                    <div class="w-16 h-16 gradient-gold rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-noir" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-display text-2xl font-semibold text-white mb-4">Private Fester</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        Løft stemningen på din private fest med vår eksklusive underholdning. 
-                        Diskresjon og profesjonalitet garantert.
-                    </p>
+                    <h3 class="font-display text-2xl font-bold text-white mb-4">Private Fester</h3>
+                    <p class="text-gray-400 mb-6">Bursdager, jubileer eller andre spesielle anledninger fortjener ekstraordinær underholdning.</p>
+                    <p class="text-gold font-semibold">Fra 4 500 kr</p>
                 </div>
-
                 <!-- Service Card 3 -->
-                <div class="card-hover bg-darker border border-gold/20 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                <div class="bg-noir p-8 rounded-2xl border border-gold/20 card-hover">
+                    <div class="w-16 h-16 gradient-gold rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-noir" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                         </svg>
                     </div>
-                    <h3 class="font-display text-2xl font-semibold text-white mb-4">Bedriftsarrangementer</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        Profesjonell underholdning for bedriftsfester og arrangementer. 
-                        Vi tilpasser showet til deres ønsker.
-                    </p>
+                    <h3 class="font-display text-2xl font-bold text-white mb-4">Bedriftsevents</h3>
+                    <p class="text-gray-400 mb-6">Profesjonell underholdning for firmafester og corporate events med stil og klasse.</p>
+                    <p class="text-gold font-semibold">Fra 8 000 kr</p>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Service Card 4 -->
-                <div class="card-hover bg-darker border border-gold/20 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-display text-2xl font-semibold text-white mb-4">VIP Pakker</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        Eksklusive VIP-pakker med utvidet underholdning, champagne og personlig service gjennom hele kvelden.
+    <!-- About Section -->
+    <section id="om-oss" class="py-24 bg-noir relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-gold/5 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-gold uppercase tracking-widest text-sm mb-4">Om Oss</p>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Erfaring & Profesjonalitet</h2>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Emanuel Gigolo Entertainment AS har levert førsteklasses underholdning i over 10 år. Våre artister er nøye utvalgt og profesjonelt trent for å gi deg og dine gjester en uforglemmelig opplevelse.
                     </p>
-                </div>
-
-                <!-- Service Card 5 -->
-                <div class="card-hover bg-darker border border-gold/20 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-dark" fill
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Vi setter diskresjon, profesjonalitet og kundetilfredshet i høysetet. Alle våre oppdrag håndteres med største respekt og konfidensialitet.
+                    </p>
+                    <div class="grid grid-cols-3 gap-8">
+                        <div>
+                            <p class="font-display text-4xl font
