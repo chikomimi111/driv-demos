@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="no" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rørleggermester Tommy Paulsen & Sønner AS | VVS i Oslo og omegn</title>
+    <meta name="description" content="Profesjonell rørlegger i Oslo og omegn. Vi tilbyr alle typer VVS-tjenester - fra små reparasjoner til komplette baderom. Kontakt oss for gratis befaring!">
+    <meta name="robots" content="all">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rørleggermester Tommy Paulsen & Sønner AS">
+    <meta property="og:description" content="Profesjonell rørlegger i Oslo og omegn. Alle typer VVS-tjenester.">
+    <meta property="og:url" content="https://tommypaulsen.no/">
+    <link rel="canonical" href="https://tommypaulsen.no/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#f97316'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-primary p-2 rounded-lg">
+                        <i class="fas fa-wrench text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg md:text-xl font-bold text-primary leading-tight">Tommy Paulsen & Sønner</h1>
+                        <p class="text-xs text-gray-500">Rørleggermester AS</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#tjenester" class="text-gray-600 hover:text-primary transition">Tjenester</a>
+                    <a href="#om-oss" class="text-gray-600 hover:text-primary transition">Om oss</a>
+                    <a href="#kontakt" class="text-gray-600 hover:text-primary transition">Kontakt</a>
+                    <a href="tel:+4712345678" class="bg-accent hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition">
+                        <i class="fas fa-phone mr-2"></i>Ring oss
+                    </a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="#tjenester" class="block text-gray-600 hover:text-primary">Tjenester</a>
+                <a href="#om-oss" class="block text-gray-600 hover:text-primary">Om oss</a>
+                <a href="#kontakt" class="block text-gray-600 hover:text-primary">Kontakt</a>
+                <a href="tel:+4712345678" class="block bg-accent text-white px-6 py-2 rounded-full font-semibold text-center">
+                    <i class="fas fa-phone mr-2"></i>Ring oss
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary to-secondary min-h-screen flex items-center pt-20">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <pattern id="pipes" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <circle cx="10" cy="10" r="2" fill="white"/>
+                    <line x1="10" y1="0" x2="10" y2="20" stroke="white" stroke-width="0.5"/>
+                    <line x1="0" y1="10" x2="20" y2="10" stroke="white" stroke-width="0.5"/>
+                </pattern>
+                <rect width="100%" height="100%" fill="url(#pipes)"/>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <div class="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-shield-alt text-accent mr-2"></i>
+                        <span class="text-sm">Autorisert rørleggerbedrift</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Din lokale<br>
+                        <span class="text-accent">VVS-ekspert</span>
+                    </h2>
+                    <p class="text-xl md:text-2xl text-blue-100 mb-8">
+                        Over 30 års erfaring med rørleggerarbeid i Oslo og omegn. Vi er her for deg – døgnet rundt.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#kontakt" class="bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition transform hover:scale-105 text-center">
+                            <i class="fas fa-calendar-check mr-2"></i>Bestill befaring
+                        </a>
+                        <a href="tel:+4712345678" class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-8 py-4 rounded-full font-bold text-lg transition text-center border border-white/30">
+                            <i class="fas fa-phone-alt mr-2"></i>22 XX XX XX
+                        </a>
+                    </div>
+                    <div class="mt-10 flex items-center space-x-6">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center border-2 border-white">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center border-2 border-white">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center border-2 border-white">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <p class="text-blue-100">
+                            <span class="font-bold text-white">500+</span> fornøyde kunder
+                        </p>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="relative">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white rounded-2xl p-6 text-center">
+                                    <i class="fas fa-clock text-4xl text-primary mb-3"></i>
+                                    <p class="font-bold text-gray-800">24/7</p>
+                                    <p class="text-sm text-gray-500">Beredskap</p>
+                                </div>
+                                <div class="bg-white rounded-2xl p-6 text-center">
+                                    <i class="fas fa-award text-4xl text-primary mb-3"></i>
+                                    <p class="font-bold text-gray-800">30+ år</p>
+                                    <p class="text-sm text-gray-500">Erfaring</p>
+                                </div>
+                                <div class="bg-white rounded-2xl p-6 text-center">
+                                    <i class="fas fa-thumbs-up text-4xl text-primary mb-3"></i>
+                                    <p class="font-bold text-gray-800">Garanti</p>
+                                    <p class="text-sm text-gray-500">På alt arbeid</p>
+                                </div>
+                                <div class="bg-white rounded-2xl p-6 text-center">
+                                    <i class="fas fa-map-marker-alt text-4xl text-primary mb-3"></i>
+                                    <p class="font-bold text-gray-800">Lokalt</p>
+                                    <p class="text-sm text-gray-500">Oslo & omegn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#tjenester" class="text-white/70 hover:text-white">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="tjenester" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Våre tjenester</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-4">Komplett VVS-service</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Vi tilbyr et bredt spekter av rørleggertjenester for private hjem og næringsbygg. Kvalitet og kundetilfredshet står alltid i fokus.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group">
+                    <div class="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-bath text-2xl text-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Baderom</h3>
+                    <p class="text-gray-600 mb-4">Komplett oppussing og renovering av bad. Fra planlegging til ferdig resultat med garanti.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Totalrenovering</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Membranarbeid</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Flislegging</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group">
+                    <div class="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-faucet text-2xl text-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Rørleggerarbeid</h3>
+                    <p class="text-gray-600 mb-4">Installasjon, reparasjon og vedlikehold av rør og sanitærutstyr.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Lekkasjer</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Tette avløp</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Nyinstallasjon</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group">
+                    <div class="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-fire text-2xl text-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Varme</h3>
+                    <p class="text-gray-600 mb-4">Installasjon og service av varmeanlegg, gulvvarme og varmtvannsberedere.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Gulvvarme</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Varmepumper</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Radiatorer</li>
